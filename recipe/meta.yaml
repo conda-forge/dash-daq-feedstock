@@ -21,7 +21,7 @@ requirements:
   run:
     - python
     # NOTE : The following are not present in the setup.py file.
-    - dash
+    - dash>=1.0.0
     - dash-renderer
     - dash-html-components
     - dash-core-components
