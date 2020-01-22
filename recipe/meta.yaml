@@ -1,5 +1,5 @@
 {% set name = "dash-daq" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dash_daq-{{ version }}.tar.gz
-  sha256: 5f69e01eccc58cc5fad792d0d0a7627454f338f09b94e2a2d892b855f04a6f73
+  sha256: e3f7ca5117f5ac6e5ac51091444d2188be8a318e8c513351d72b95737fefa07f
 
 build:
   noarch: python
