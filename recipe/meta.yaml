@@ -1,5 +1,5 @@
 {% set name = "dash-daq" %}
-{% set version = "0.3.3" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dash_daq-{{ version }}.tar.gz
-  sha256: 8370e6624c2b2dd8c53ed8af9a5a376d4b4a8bb4eb4899b57ae8e55fdb8bad8f
+  sha256: 051adb0ffc03e25f24bc031d40b858aa85bd3bae61450b150a24a5d13847d332
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Control components for Dash'
+  summary: Control components for Dash
   doc_url: https://dash.plot.ly/dash-daq
   dev_url: https://github.com/plotly/dash-daq
 
