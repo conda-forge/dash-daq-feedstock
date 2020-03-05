@@ -20,11 +20,7 @@ requirements:
     - pip
   run:
     - python
-    # NOTE : The following are not present in the setup.py file.
-    - dash >=1.0.0
-    - dash-renderer
-    - dash-html-components
-    - dash-core-components
+    - dash >=1.6.0
 
 test:
   imports:
