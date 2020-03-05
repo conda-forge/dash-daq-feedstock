@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python
-    - dash >=1.6.0
+    - dash >=1.6.1
 
 test:
   imports:
