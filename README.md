@@ -5,7 +5,7 @@ Home: https://www.dashdaq.io/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Control components for Dash
 
