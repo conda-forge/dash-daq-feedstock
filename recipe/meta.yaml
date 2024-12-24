@@ -6,23 +6,25 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dash_daq-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dash_daq-{{ version }}.tar.gz
   sha256: a1d85b6799f7b885652fbc44aebdb58c41254616a8d350b943beeb42ade4256a
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - dash >=1.6.1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - dash_daq
 
